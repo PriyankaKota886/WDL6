@@ -43,7 +43,6 @@ describe("Todo Application", function () {
     });
     const parsedResponse = JSON.parse(response.text);
     const todoID = parsedResponse.id;
-
     expect(parsedResponse.completed).toBe(false);
 
     const markCompleteResponse = await agent
